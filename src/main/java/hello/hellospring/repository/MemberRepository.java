@@ -8,9 +8,9 @@ import java.util.Optional;
 public interface MemberRepository {
     Member save(Member member);
 
-    Optional<Member> findId(Long id);
+    Optional<Member> findById(Long id);
 
-    Optional<Member> findName(String name);
+    Optional<Member> findByName(String name);
 
     List<Member> findAll();
 }
